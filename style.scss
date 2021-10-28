@@ -220,7 +220,6 @@ h3 {
   p {
     text-align: center;
     padding-top: 35%;
-    
   }
 }
 
@@ -359,12 +358,12 @@ h3 {
 
 .enligne {
   @include display;
-
   margin: 0 10px;
 }
 
 .decaler {
   margin: 0 10px;
+  padding: 10px;
 }
 
 /***** Partie COEUR *****/
@@ -677,7 +676,19 @@ footer {
       width: 400px;
 
       &:hover {
-        padding-right: 50px;
+        padding-right: 0px;
+      }
+
+      h4 {
+        &:hover + .ligne__dessous {
+          padding-right: 50px;
+        }
+      }
+
+      .ligne__dessous {
+        &:hover {
+          padding-right: 50px;
+        }
       }
     }
 

@@ -331,6 +331,7 @@ h3 {
 
 .decaler {
   margin: 0 10px;
+  padding: 10px;
 }
 
 /***** Partie COEUR *****/
@@ -755,6 +756,12 @@ footer .fa-hands-helping {
     width: 400px;
   }
   main .menu-ligne:hover {
+    padding-right: 0px;
+  }
+  main .menu-ligne h4:hover + .ligne__dessous {
+    padding-right: 50px;
+  }
+  main .menu-ligne .ligne__dessous:hover {
     padding-right: 50px;
   }
   main .btn__com {
