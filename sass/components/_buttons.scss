@@ -1,0 +1,15 @@
+
+.btn__explo {
+    @include btn__explo;
+  }
+  
+  .btn__com {
+    @include btn__explo;
+    width: 250px;
+    height: 50px;
+    margin: 20px;
+  
+    &:active + .barre {
+      transform: translate(0, -15px);
+    }
+  }
