@@ -522,9 +522,8 @@ footer {
 
 .menu-ligne {
   @include menu-ligne();
-width: 17rem;
+width: 20rem;
 
-  background-color: hotpink;
 }
 
 .menu-ligne h4 {

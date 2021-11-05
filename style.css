@@ -536,8 +536,7 @@ footer .fa-hands-helping {
   overflow: hidden;
   -webkit-transition: padding-right 450ms ease-in-out;
   transition: padding-right 450ms ease-in-out;
-  width: 17rem;
-  background-color: hotpink;
+  width: 20rem;
 }
 
 .menu-ligne:hover {
