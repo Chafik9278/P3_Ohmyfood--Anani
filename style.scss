@@ -173,7 +173,7 @@ $linear-gradient: linear-gradient(to bottom right, #ff79da, #9356dc);
 
 body {
   font-family: "Roboto", sans-serif;
-
+  max-width: 1900px;
   margin: 0 15px 0 15px;
 }
 
@@ -188,14 +188,10 @@ li {
 
 h1 {
   font-family: Shrikhand, Roboto, sans-serif;
- 
 }
-
 
 h3 {
   margin: 5px;
-
-
 }
 
 //Style Css Generale*****FIN********
@@ -279,7 +275,6 @@ h3 {
   }
 }
 
-
 /***** Partie 1 Recherche **FIN***/
 
 /***** Partie 2 Fonctionnement *****/
@@ -293,7 +288,7 @@ h3 {
   li {
     display: flex;
     align-items: center;
-max-width: 400px;
+    max-width: 400px;
     margin: 15px 1px 10px 1px;
     border-radius: 20px;
     box-shadow: 1px 2px 8px 2px #c4c4c4;
@@ -465,7 +460,6 @@ footer {
 .header__titre {
   @include display();
 
-
   h1 {
     margin-right: 100px;
   }
@@ -559,8 +553,6 @@ footer {
   }
 }
 
-
-
 .btn__com {
   @include btn__explo;
   width: 250px;
@@ -633,8 +625,6 @@ footer {
     align-items: center;
 
     li {
-    
-     
       margin-right: 40px;
       background-color: whitesmoke;
 
@@ -684,7 +674,6 @@ footer {
     }
   }
 
-
   .header__titre {
     justify-content: center;
     width: 100%;
@@ -692,7 +681,6 @@ footer {
     a {
       padding: 20px;
       font-size: 20px;
-     
     }
 
     h1 a {
@@ -708,13 +696,9 @@ footer {
       align-items: center;
       justify-content: space-around;
       flex-wrap: wrap;
-     
-   
     }
 
     .menu-ligne {
-    
-
       &:hover {
         padding-right: 0px;
       }
