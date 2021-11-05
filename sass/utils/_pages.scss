@@ -1,0 +1,121 @@
+// CSS TOUTES LES PAGES **********************************************
+// CSS TOUTES LES PAGES **********************************************
+// CSS TOUTES LES PAGES **********************************************
+
+.header__titre {
+    @include display();
+  
+    h1 {
+      margin-right: 100px;
+    }
+  }
+  
+  .main__img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .main__menu {
+    @include main-menu;
+  }
+  
+  .menu__title {
+    @include display();
+    font-family: Shrikhand, sans-serif;
+    padding: 0 10px;
+  }
+  
+  .entrees {
+    animation: decalage__droite 3s ease-out;
+    h3 {
+      &:hover + .ligne-verte {
+        transform: translate(5px, -5px);
+        border: 2px solid #e29999;
+        width: 400px;
+      }
+    }
+  }
+  
+  .plats {
+    animation: decalage__droite 4s ease-out;
+    h3 {
+      &:hover + .ligne-verte {
+        transform: translate(5px, -5px);
+        border: 2px solid #e29999;
+        width: 400px;
+      }
+    }
+  }
+  
+  .ligne-verte {
+    width: 40px;
+    border: 2px solid #99e2d0;
+    margin-left: 10px;
+    transition: transform 1s ease-out;
+  }
+  
+  .menu-ligne {
+    @include menu-ligne();
+  }
+  
+  .menu-ligne h4 {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .ligne__dessous {
+    @include display();
+  
+    p {
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  
+    span {
+      margin-right: 5px;
+    }
+  }
+  
+  .encoche {
+    @include encoche;
+  }
+  
+  .dessert {
+    animation: decalage__droite 5s ease-out;
+    h3 {
+      &:hover + .ligne-verte {
+        transform: translate(5px, -5px);
+        border: 2px solid #e29999;
+        width: 400px;
+      }
+    }
+  }
+  
+  .btn__explo {
+    @include btn__explo;
+  }
+  
+  .btn__com {
+    @include btn__explo;
+    width: 250px;
+    height: 50px;
+    margin: 20px;
+  
+    &:active + .barre {
+      transform: translate(0, -15px);
+    }
+  }
+  
+  .barre {
+    text-align: center;
+    background: $color3-green;
+    width: 100%;
+    height: 1px;
+    transition: transform 200ms ease-in-out;
+  }
+  .aligne-btn {
+    text-align: center;
+  }

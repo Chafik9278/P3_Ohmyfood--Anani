@@ -1,0 +1,50 @@
+
+// @keyframes**********************************************
+//
+
+// @keyframes visible**********************************************
+
+@keyframes visible {
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 0.5;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  // @keyframes rotate**********************************************
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+      background-color: $color1-purple;
+    }
+  
+    50% {
+      transform: rotate(180deg);
+      background-color: $color3-green;
+    }
+  
+    100% {
+      transform: rotate(360deg);
+      background-color: $color2-pink;
+    }
+  }
+  
+  // @keyframes decalage__droite**********************************************
+  @keyframes decalage__droite {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  

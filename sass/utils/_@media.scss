@@ -1,0 +1,135 @@
+
+// Media querys@**************************************
+// Media querys@**************************************
+// Media querys@**************************************
+
+@media screen and (min-width: 768px) {
+    .header__title {
+      font-size: 60px;
+    }
+  
+    .recherche {
+      .recherche--haut {
+        height: 100px;
+  
+        i {
+          width: 100px;
+          font-size: 30px;
+        }
+  
+        input {
+          height: 50px;
+          width: 100%;
+          text-align: center;
+        }
+      }
+  
+      .recherche--bas {
+        button {
+          width: 300px;
+          height: 70px;
+          font-size: 20px;
+        }
+      }
+    }
+  
+    .fonctionnement h2 {
+      text-align: center;
+      font-size: 30px;
+      margin: 0;
+    }
+  
+    .fonctionnement__groupe {
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  
+      li {
+        margin-right: 40px;
+        background-color: whitesmoke;
+      }
+    }
+  
+    .resto h2 {
+      text-align: center;
+      font-size: 30px;
+      margin: 0;
+    }
+  
+    .resto__groupe {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .card-resto {
+      width: 40%;
+      height: 350px;
+    }
+  
+    footer {
+      text-align: center;
+      background-color: whitesmoke;
+  
+      h3 {
+        color: black;
+        font-size: 40px;
+        margin: 0;
+      }
+  
+      li {
+        a {
+          color: black;
+          font-size: 20px;
+        }
+  
+        a:hover {
+          color: $color2-pink;
+          font-size: 22px;
+        }
+      }
+    }
+  
+    .header__titre {
+      justify-content: center;
+  
+      a {
+        padding: 20px;
+        font-size: 20px;
+      }
+  
+      h1 a {
+        font-size: 60px;
+      }
+    }
+  
+    //-- Main -->
+  
+    main {
+      .all-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+  
+      .menu-ligne {
+        width: 400px;
+  
+        &:hover {
+          padding-right: 50px;
+        }
+      }
+  
+      .btn__com {
+        width: 300px;
+        height: 80px;
+        margin: 50px;
+  
+        &:active + .barre {
+          transform: translate(0, -45px);
+        }
+      }
+    }
+  }
