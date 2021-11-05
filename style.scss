@@ -288,7 +288,8 @@ h3 {
   li {
     display: flex;
     align-items: center;
-    max-width: 400px;
+
+    max-width: 600px;
     margin: 15px 1px 10px 1px;
     border-radius: 20px;
     box-shadow: 1px 2px 8px 2px #c4c4c4;
@@ -471,6 +472,12 @@ footer {
   object-fit: cover;
 }
 
+
+.all-menu {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap
+}
 .main__menu {
   @include main-menu;
 }
@@ -515,6 +522,9 @@ footer {
 
 .menu-ligne {
   @include menu-ligne();
+width: 17rem;
+
+  background-color: hotpink;
 }
 
 .menu-ligne h4 {
@@ -524,6 +534,7 @@ footer {
 
 .ligne__dessous {
   @include display();
+  
 
   p {
     margin: 0;
