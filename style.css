@@ -220,7 +220,7 @@ h3 {
           transform: scale(1.01);
   -webkit-box-shadow: 5px 5px 5px #000;
           box-shadow: 5px 5px 5px #000;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 /***** Partie 1 Recherche **FIN***/
@@ -237,6 +237,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 400px;
   margin: 15px 1px 10px 1px;
   border-radius: 20px;
   -webkit-box-shadow: 1px 2px 8px 2px #c4c4c4;
@@ -474,6 +475,7 @@ footer .fa-hands-helping {
           justify-content: space-between;
   font-family: Shrikhand, sans-serif;
   padding: 0 10px;
+  font-size: 13px;
 }
 
 .entrees {
@@ -634,7 +636,7 @@ footer .fa-hands-helping {
           transform: scale(1.01);
   -webkit-box-shadow: 5px 5px 5px #000;
           box-shadow: 5px 5px 5px #000;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .btn__com:active + .barre {
@@ -657,12 +659,13 @@ footer .fa-hands-helping {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 760px) {
   .header__title {
-    font-size: 60px;
+    font-size: 50px;
   }
   .recherche .recherche--haut {
     height: 100px;
+    margin: 0 50px;
   }
   .recherche .recherche--haut i {
     width: 100px;
@@ -747,6 +750,7 @@ footer .fa-hands-helping {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 100%;
   }
   .header__titre a {
     padding: 20px;
@@ -764,9 +768,8 @@ footer .fa-hands-helping {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-  }
-  main .menu-ligne {
-    width: 400px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   main .menu-ligne:hover {
     padding-right: 0px;

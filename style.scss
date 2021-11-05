@@ -293,7 +293,7 @@ h3 {
   li {
     display: flex;
     align-items: center;
-
+max-width: 400px;
     margin: 15px 1px 10px 1px;
     border-radius: 20px;
     box-shadow: 1px 2px 8px 2px #c4c4c4;
@@ -465,6 +465,7 @@ footer {
 .header__titre {
   @include display();
 
+
   h1 {
     margin-right: 100px;
   }
@@ -484,6 +485,7 @@ footer {
   @include display();
   font-family: Shrikhand, sans-serif;
   padding: 0 10px;
+  font-size: 13px;
 }
 
 .entrees {
@@ -586,14 +588,15 @@ footer {
 // Media querys@**************************************
 // Media querys@**************************************
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 760px) {
   .header__title {
-    font-size: 60px;
+    font-size: 50px;
   }
 
   .recherche {
     .recherche--haut {
       height: 100px;
+      margin: 0 50px;
 
       i {
         width: 100px;
@@ -681,12 +684,15 @@ footer {
     }
   }
 
+
   .header__titre {
     justify-content: center;
+    width: 100%;
 
     a {
       padding: 20px;
       font-size: 20px;
+     
     }
 
     h1 a {
@@ -701,10 +707,13 @@ footer {
       display: flex;
       align-items: center;
       justify-content: space-around;
+      flex-wrap: wrap;
+     
+   
     }
 
     .menu-ligne {
-      width: 400px;
+    
 
       &:hover {
         padding-right: 0px;
